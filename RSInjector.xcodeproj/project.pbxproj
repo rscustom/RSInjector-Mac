@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4396270118293D0900C11BA2 /* RS2014.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4396270018293D0900C11BA2 /* RS2014.icns */; };
+		43D71346182939B30089274E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D7133C1829398C0089274E /* AppDelegate.m */; };
+		43D71347182939B30089274E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D71341182939A60089274E /* main.m */; };
+		43D71348182939CA0089274E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D7133D1829398C0089274E /* MainMenu.xib */; };
+		43D7134C18293B2D0089274E /* RSBypass.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 43D71337182938DB0089274E /* RSBypass.dylib */; };
+		FA130E6416806E36002E4BF9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA130E6316806E36002E4BF9 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43D71336182938DB0089274E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43D71332182938DB0089274E /* RSBypass.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA88A0821680711D00915B81;
+			remoteInfo = RSBypass;
+		};
+		43D7134D18293B4E0089274E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43D71332182938DB0089274E /* RSBypass.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA88A0811680711D00915B81;
+			remoteInfo = RSBypass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4396270018293D0900C11BA2 /* RS2014.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = RS2014.icns; sourceTree = "<group>"; };
+		43D71332182938DB0089274E /* RSBypass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RSBypass.xcodeproj; path = RSBypass/RSBypass.xcodeproj; sourceTree = "<group>"; };
+		43D7133B1829398C0089274E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RSInjector/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		43D7133C1829398C0089274E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RSInjector/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		43D7133E1829398C0089274E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RSInjector/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		43D71341182939A60089274E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RSInjector/main.m; sourceTree = SOURCE_ROOT; };
+		43D71342182939A60089274E /* RSInjector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RSInjector-Info.plist"; path = "RSInjector/RSInjector-Info.plist"; sourceTree = SOURCE_ROOT; };
+		43D71343182939A60089274E /* RSInjector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RSInjector-Prefix.pch"; path = "RSInjector/RSInjector-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		FA130E5F16806E36002E4BF9 /* RSInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA130E6316806E36002E4BF9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA130E6616806E36002E4BF9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA130E6816806E36002E4BF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA130E5C16806E36002E4BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA130E6416806E36002E4BF9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43D71333182938DB0089274E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43D71337182938DB0089274E /* RSBypass.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA130E5416806E36002E4BF9 = {
+			isa = PBXGroup;
+			children = (
+				4396270018293D0900C11BA2 /* RS2014.icns */,
+				FA130E6916806E36002E4BF9 /* RSInjector */,
+				FA130E6216806E36002E4BF9 /* Frameworks */,
+				FA130E6016806E36002E4BF9 /* Products */,
+				43D71332182938DB0089274E /* RSBypass.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		FA130E6016806E36002E4BF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA130E5F16806E36002E4BF9 /* RSInjector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA130E6216806E36002E4BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA130E6816806E36002E4BF9 /* Foundation.framework */,
+				FA130E6616806E36002E4BF9 /* AppKit.framework */,
+				FA130E6316806E36002E4BF9 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA130E6916806E36002E4BF9 /* RSInjector */ = {
+			isa = PBXGroup;
+			children = (
+				43D7133B1829398C0089274E /* AppDelegate.h */,
+				43D7133C1829398C0089274E /* AppDelegate.m */,
+				43D7133D1829398C0089274E /* MainMenu.xib */,
+				FA130E6A16806E36002E4BF9 /* Supporting Files */,
+			);
+			name = RSInjector;
+			path = CalculatorLauncher;
+			sourceTree = "<group>";
+		};
+		FA130E6A16806E36002E4BF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D71341182939A60089274E /* main.m */,
+				43D71342182939A60089274E /* RSInjector-Info.plist */,
+				43D71343182939A60089274E /* RSInjector-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA130E5E16806E36002E4BF9 /* RSInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA130E7D16806E36002E4BF9 /* Build configuration list for PBXNativeTarget "RSInjector" */;
+			buildPhases = (
+				FA130E5B16806E36002E4BF9 /* Sources */,
+				FA130E5C16806E36002E4BF9 /* Frameworks */,
+				FA130E5D16806E36002E4BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43D7134E18293B4E0089274E /* PBXTargetDependency */,
+			);
+			name = RSInjector;
+			productName = CalculatorLauncher;
+			productReference = FA130E5F16806E36002E4BF9 /* RSInjector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA130E5616806E36002E4BF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Alexandre Colucci";
+			};
+			buildConfigurationList = FA130E5916806E36002E4BF9 /* Build configuration list for PBXProject "RSInjector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA130E5416806E36002E4BF9;
+			productRefGroup = FA130E6016806E36002E4BF9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 43D71333182938DB0089274E /* Products */;
+					ProjectRef = 43D71332182938DB0089274E /* RSBypass.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FA130E5E16806E36002E4BF9 /* RSInjector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		43D71337182938DB0089274E /* RSBypass.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = RSBypass.dylib;
+			remoteRef = 43D71336182938DB0089274E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA130E5D16806E36002E4BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D71348182939CA0089274E /* MainMenu.xib in Resources */,
+				4396270118293D0900C11BA2 /* RS2014.icns in Resources */,
+				43D7134C18293B2D0089274E /* RSBypass.dylib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA130E5B16806E36002E4BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D71346182939B30089274E /* AppDelegate.m in Sources */,
+				43D71347182939B30089274E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43D7134E18293B4E0089274E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSBypass;
+			targetProxy = 43D7134D18293B4E0089274E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43D7133D1829398C0089274E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D7133E1829398C0089274E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA130E7B16806E36002E4BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		FA130E7C16806E36002E4BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		FA130E7E16806E36002E4BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSInjector/RSInjector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RSInjector/RSInjector-Info.plist";
+				PRODUCT_NAME = RSInjector;
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA130E7F16806E36002E4BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSInjector/RSInjector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RSInjector/RSInjector-Info.plist";
+				PRODUCT_NAME = RSInjector;
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA130E5916806E36002E4BF9 /* Build configuration list for PBXProject "RSInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA130E7B16806E36002E4BF9 /* Debug */,
+				FA130E7C16806E36002E4BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA130E7D16806E36002E4BF9 /* Build configuration list for PBXNativeTarget "RSInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA130E7E16806E36002E4BF9 /* Debug */,
+				FA130E7F16806E36002E4BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA130E5616806E36002E4BF9 /* Project object */;
+}
