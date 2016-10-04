@@ -9,12 +9,13 @@ typedef int8_t  BYTE;
 
 // These numbers come from otool -lv
 const DWORD  segStart = 0x001000;
-const size_t segLen   = 0x0135b000;
+const size_t segLen   = 0x013ce000;
 
 // Could be made more general to bypass all signature checks
 // including ini files...
 // For the time being only patches the sig verif of sng files
-const char*  hint     = "\x0f\x84\xc6\x0a\x00\x00";
+//const char*  hint     = "\x0f\x84\xc6\x0a\x00\x00";
+const char*  hint     = "\x84\xdb\x0f\x84\xde\x0a\x00\x00";
 
 
 bool bCompare(const BYTE* pData, const BYTE * bMask, const char* szMask) {
@@ -35,23 +36,25 @@ void* FindPattern(DWORD dwAddress, size_t dwLen, BYTE* bMask, char* szMask) {
 @implementation RSBypass
 +(void)load
 {
-    void* ptr = FindPattern(segStart, segLen,
-                            (BYTE*)hint, "xxxxxx");
-    if (ptr) {
+//    NSLog(@"RSBypass: load()");
 
+    void* ptr = FindPattern(segStart, segLen,
+                            (BYTE*)hint, "xxxxxxxx");
+    if (ptr) {
+        
         long page_size = sysconf(_SC_PAGESIZE);
         void* page_start = (long)ptr & -page_size;
-
+        
 //        NSLog(@"Removing memory protection");
         mprotect(page_start, page_size, PROT_READ | PROT_WRITE | PROT_EXEC);
-
+        
 //        NSLog(@"RSInjector: Bypassing signature check at %p", ptr);
-        memset(ptr, 0x90, 6);
-        msync(ptr, 6, MS_SYNC);
-
+        memset(ptr, 0x90, 8);
+        msync(ptr, 8, MS_SYNC);
+        
         // Restoring memory protection
         mprotect(page_start, page_size, PROT_READ | PROT_EXEC);
-
+        
     }
 }
 @end
