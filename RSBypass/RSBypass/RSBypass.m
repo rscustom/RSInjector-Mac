@@ -61,7 +61,9 @@ void* FindPattern(DWORD dwAddress, size_t dwLen, BYTE* bMask, char* szMask) {
             mprotect(page_start, page_size, PROT_READ | PROT_WRITE | PROT_EXEC);
             
             NSLog(@"RSInjector: Bypassing signature check at %p", ptr);
-            memset(ptr, 0x90, 9);
+            *((char*)ptr + 3) = 0x74;
+            *((char*)ptr + 4) = 0x04;
+            memset(ptr + 5, 0x90, 4);
             msync(ptr, 9, MS_SYNC);
             
             mprotect(page_start, page_size, PROT_READ | PROT_EXEC);
